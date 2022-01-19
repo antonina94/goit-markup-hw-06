@@ -808,9 +808,6 @@ body {
   transform: translateY(0);
 }
 /* ---------------------------------------------------------Формы */
-.subscription {
-  height: 50px;
-}
 
 .subscription-label {
   color: #ffffff;
@@ -821,6 +818,8 @@ body {
   letter-spacing: 0.03em;
   text-align: left;
   font-family: inherit;
+  display: block;
+  margin-bottom: 20px;
 }
 .subscription-input {
   font-family: inherit;
@@ -834,26 +833,43 @@ body {
   background-color: var(--bg-color2);
   padding-top: 15px;
   padding-bottom: 15px;
+  padding-left: 16px;
+  height: 50px;
+  width: 358px;
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  drop-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  border-radius: 4px;
 }
-.subscription-text {
+.subscription-submit {
   background: var(--accent-color);
   color: #ffffff;
+  fill: #ffffff;
   font-family: inherit;
   font-size: 16px;
-  font-style: normal;
   font-weight: 700;
   line-height: 1.9;
   letter-spacing: 0.06em;
   text-align: center;
-  padding-top: 10px;
-  padding-bottom: 10px;
-  padding-right: 10px;
+  margin-left: 12px;
+  width: 200px;
+  height: 50px;
+  border: none;
+  border-radius: 4px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0;
 }
 
-.subscription-div {
-  margin-top: 20px;
+.subscription-text {
+  margin-right: 10px;
 }
 
+.form-subscription {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
 .modal-title {
   font-family: inherit;
   font-size: 20px;
@@ -877,17 +893,6 @@ body {
   padding-top: 11px;
 }
 
-.form-input::placeholder {
-  font-family: inherit;
-  font-weight: normal;
-  font-size: 12px;
-  line-height: 1.17;
-  letter-spacing: 0.01em;
-  color: rgba(117, 117, 117, 0.5);
-  height: 120px;
-  padding: 12px 16px;
-}
-
 .form-label {
   font-family: inherit;
   font-style: normal;
@@ -898,6 +903,26 @@ body {
   color: #757575;
   margin-bottom: 4px;
   display: block;
+}
+
+.form-text {
+  font-family: inherit;
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 1.17;
+  letter-spacing: 0.01em;
+  text-align: left;
+  width: 100%;
+  height: 120px;
+  padding: 12px 16px;
+  border: 1px solid rgba(33, 33, 33, 0.2);
+  box-sizing: border-box;
+  border-radius: 4px;
+  resize: none;
+}
+.form-text::placeholder {
+  color: rgba(117, 117, 117, 0.5);
 }
 
 .form-button {
