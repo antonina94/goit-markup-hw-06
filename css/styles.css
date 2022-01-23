@@ -1034,7 +1034,7 @@ body {
   margin-right: 7px;
   border: 2px solid #212121;
   border-radius: 2px;
-  fill: transparent;
+  fill: none;
   transition: border-color var(--transition-duration)
       var(--transition-timing-function),
     background-color var(--transition-duration)
@@ -1046,7 +1046,7 @@ body {
   border-color: var(--accent-color);
 }
 
-.input-agreement:checked ~ .form-icon-check {
+.input-agreement:checked + .form-icon-check {
   border: transparent;
   background-color: var(--accent-color);
   fill: #ffffff;
