@@ -918,6 +918,7 @@ body {
   transition-property: border-color;
   transition-duration: var(--transition-duration);
   transition-timing-function: var(--transition-timing-function);
+  cursor: pointer;
 }
 
 .form-input:focus {
@@ -1012,7 +1013,8 @@ body {
   fill: var(--accent-color);
 }
 
-.form-label.agreement {
+.label-agreement {
+  display: flex;
   flex-direction: row;
   align-items: center;
   justify-content: center;
@@ -1032,7 +1034,7 @@ body {
   margin-right: 7px;
   border: 2px solid #212121;
   border-radius: 2px;
-  fill: none;
+  fill: transparent;
   transition: border-color var(--transition-duration)
       var(--transition-timing-function),
     background-color var(--transition-duration)
@@ -1040,11 +1042,11 @@ body {
     fill var(--transition-duration) var(--transition-timing-function);
 }
 
-.form-label.agreement:focus-within > .form-icon-check {
+.label-agreement:focus-within > .form-icon-check {
   border-color: var(--accent-color);
 }
 
-.form-input.agreement:checked ~ .form-icon-check {
+.input-agreement:checked + .form-icon-check {
   border: transparent;
   background-color: var(--accent-color);
   fill: #ffffff;
