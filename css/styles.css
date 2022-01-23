@@ -874,6 +874,14 @@ body {
   justify-content: center;
   align-items: center;
   padding: 0;
+  transition-property: background-color;
+  transition-duration: var(--transition-duration);
+  transition-timing-function: var(--transition-timing-function);
+}
+
+.subscription-submit:hover,
+.subscription-submit:focus {
+  background-color: var(--btn-hover-color);
 }
 
 .subscription-text {
