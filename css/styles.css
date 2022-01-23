@@ -1046,7 +1046,7 @@ body {
   border-color: var(--accent-color);
 }
 
-.input-agreement:checked + .form-icon-check {
+.input-agreement:checked ~ .form-icon-check {
   border: transparent;
   background-color: var(--accent-color);
   fill: #ffffff;
